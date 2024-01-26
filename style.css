@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+  }
+
+  nav {
+    background-color: #333;
+    overflow: hidden;
+  }
+
+  nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  section{
+    margin-left: 15px;
+  }
+
+  article{
+margin-left: 15px;
+margin-bottom: 20px;
+margin-right: 15px;
+  }
+  
+.Gallery{
+  display:inline-block;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-bottom: 25px;
+}
+
+h1{
+  text-align: center;
+}
+
+.description{
+  padding-bottom: 10px;
+  color:black;
+}
+
+.footer{
+  background-color: #fff;
+  text-align: center;
+}
