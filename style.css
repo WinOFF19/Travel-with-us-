@@ -9,6 +9,7 @@ body {
   nav {
     background-color: #333;
     overflow: hidden;
+    display: flex;
   }
 
   nav a {
@@ -60,9 +61,10 @@ h1{
   color:black;
 }
 
-.first-page{
+.page-numbering{
   text-align: center;
-  color: black;
+  color:black;
+  margin: 25px auto;
 }
 
 p{
@@ -79,3 +81,49 @@ img{
   margin: 25px auto;
   border-radius: 12px;
 }
+
+.checkbox{
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+.first-question{
+  text-align: left;
+  margin: 15px auto;
+  margin-left: 15px;
+}
+
+.second-question{
+  text-align: left;
+  margin: 15px auto;
+  margin-left: 15px;
+}
+
+.third-question{
+  text-align: left;
+  margin: 15px auto;
+  margin-left: 15px;
+}
+
+.submit{
+  text-align: left;
+  margin: 5px auto;
+  margin-left: 15px;
+}
+
+.trip{
+margin-left: 15px;
+margin-bottom: 5px;
+}
+
+.date{
+  text-align: left;
+  margin: 5px auto;
+  margin-left: 15px;
+}
+
+.instagram{
+  text-align: center;
+  font-size: larger;
+}
+
