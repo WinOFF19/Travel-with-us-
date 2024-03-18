@@ -1,15 +1,31 @@
+:root{
+  --yellow: rgb(227, 189, 20);
+}
+
+*{
+  font-family: 'Single Day', cursive;
+  box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
     font-family: 'Single Day', cursive;
+    background-color: rgb(227, 189, 20);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
   }
 
   nav {
-    background-color: #333;
+    background-color: #000000;
     overflow: hidden;
-    display: flex;
+    position: fixed;
+    top:0;
+    width: 100%;
+    font-size: 1.5rem;
   }
 
   nav a {
@@ -17,43 +33,70 @@ body {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 0.9rem 1rem;
     text-decoration: none;
   }
 
   nav a:hover {
-    background-color: #ddd;
+    background-color: rgb(227, 189, 20);
     color: black;
+    transform: scale(1.25);
   }
   
   section{
-    margin-left: 15px;
+    margin-left: 1rem;
   }
 
   article{
 margin-left: 15px;
-margin-bottom: 20px;
+margin-bottom: 70px;
 margin-right: 15px;
-font-size: large;
+font-size: 2rem;
+text-align: center;
+color: white;
+  }
+
+  .Gallery{
+    max-width:1440px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 10px 20px;
+    justify-content: center;  
+  }
+
+  .Gallery-2{
+    max-width:1440px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 10px 20px;
+    justify-content: center;
+    margin-top: 100px;
+    
   }
   
-.Gallery{
+.Gallery-item{
   display:inline-block;
-  margin-bottom: 15px;
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding-bottom: 25px;
-  padding-right: 20px;
+  width: 300px;
+  border-style: solid;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
 }
 
 h1{
   text-align: center;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  font-size: 4rem;
+  color: white;
 }
 
 .description{
   padding-bottom: 10px;
   color:black;
+  text-align: center;
+  font-size: 20px;
 }
 
 .second-page{
@@ -64,45 +107,129 @@ h1{
 .page-numbering{
   text-align: center;
   color:black;
-  margin: 25px auto;
+  font-size: 2rem;
+  margin: auto auto 0px;
+  border-style: solid;
+  width: 8rem;
 }
 
-p{
+.page-numbering a{
+  color: white;
+}
+
+.page-numbering-2{
+  text-align: center;
+  color:black;
+  font-size: 30px;
+  margin: 80px auto 0px;
+  border-style: solid;
+  width: 6rem;
+}
+
+.page-numbering-2 a{
+  color: white;
+}
+
+.footer-dark {
+  background:black; 
+  color:white; 
+  padding:46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+.footer-dark p{
+  text-align: center;
+}
+
+.about-me{
   text-align: center;
   font-size: larger;
+  color: black;
+  width: auto;
+  text-decoration: none;
 }
 
-.contact{
-  text-align: center;
+p.about-me{
+  font-size: 1.5rem;
+  margin:2em .5em 0 .5em;
+  color: white;
+}
+
+.question{
+  color: black;
+  font-size: 1rem;
 }
 
 img{
   display: block;
   margin: 25px auto;
   border-radius: 12px;
+  border-color:black;
+  box-shadow: 11px -9px 0px 0px rgb(227, 189, 20);
+  
+}
+
+img:hover{
+  transform: scale(1.5);
 }
 
 .checkbox{
   margin-left: 15px;
   margin-bottom: 15px;
+  text-align: left;
+  width: 290px;
+  font-size: 1.5rem;
 }
 
-.first-question{
+p.first-question{
   text-align: left;
-  margin: 15px auto;
   margin-left: 15px;
+  color: white;
+  font-size:1.5rem;
 }
 
-.second-question{
+p.second-question{
   text-align: left;
-  margin: 15px auto;
+  color: white;
   margin-left: 15px;
+  font-size:1.5rem;
 }
 
-.third-question{
+p.third-question{
   text-align: left;
-  margin: 15px auto;
+  color: white;
   margin-left: 15px;
+  font-size:1.5rem;
+}
+
+p.date{
+  font-size: 1.5rem;
+  color: white;
+}
+
+p.question{
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 1.5rem;
+}
+
+input#trip.trip{
+  font-size: 1.3rem;
+  width: 10rem;
+}
+
+input.submit{
+  font-size: 1.5rem;
+  background-color: var(--yellow);
+  color: white;
+}
+
+input.submit:hover{
+  transform: scale(1.5);
+  margin-left: 2rem;
 }
 
 .submit{
@@ -118,12 +245,212 @@ margin-bottom: 5px;
 
 .date{
   text-align: left;
-  margin: 5px auto;
   margin-left: 15px;
+  color: black;
+  font-size: 15px;
+  width: 290px;
 }
 
 .instagram{
   text-align: center;
-  font-size: larger;
+  font-size: 24px;
 }
+
+a:link{
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  margin-bottom: 100px;
+  margin-top: 150px;
+  justify-content: center;
+  
+}
+
+.content div {
+  border-radius: 12px;
+  padding: 1em;
+  background-color:rgb(227, 189, 20);
+  height: 580px;
+}
+
+.contact-page{
+  background-color: white;
+}
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  width: 320px;
+  box-shadow:10px 10px;
+  border-style: solid;
+}
+
+p#contact-text{
+  padding: 0%;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Outfit', sans-serif;
+  width: 290px;
+  text-decoration: underline;
+  text-align: center;
+  font-family: 'Single Day', cursive;
+}
+
+
+.text-button{
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.icon-button{
+  color: white;
+}
+
+.link{
+  width: 290px;
+  border-radius: 10px;
+  background-color:#009dff;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.link:hover{
+  background-color: rgb(27, 210, 57);
+}
+
+img{
+  width: 250px;
+  border-style: solid;
+}
+
+p.service{
+  color: white;
+  font-size: 4rem;  
+  text-decoration: none;
+  text-align: left;
+  margin:3.5em .5em 0 .5em;
+}
+
+.container {
+  display: flex;
+  margin:2rem;
+}
+
+.service{
+  flex: 1;
+  margin:2rem;
+  padding: 1rem; 
+}
+
+#calculator {
+  margin:16rem 2rem 0 0;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+#result {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: right;
+}
+input[type="button"] {
+  width: 70px;
+  height: 70px;
+  font-size: 30px;
+  margin: 5px;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+input[type="button"]:hover {
+  background-color: #ddd;
+}
+input[type="button"].operator {
+  background-color: #f0f0f0;
+}
+input[type="button"].operator:hover {
+  background-color: #e0e0e0;
+}
+
+/* Stiluri pentru ecrane cu lățime mai mică sau egală cu 768px */
+@media screen and (max-width: 768px) {
+  nav {
+    font-size: 1rem; /* Reducem dimensiunea fontului din meniu pentru a se potrivi pe ecrane mai mici */
+  }
+
+  h1 {
+    font-size: 3rem; /* Reducem dimensiunea titlului pe ecrane mai mici */
+  }
+
+  .about-me {
+    font-size: 1rem; /* Reducem dimensiunea textului despre mine pentru a fi mai ușor de citit pe ecrane mici */
+  }
+
+  img {
+    width: 200px; /* Reducem lățimea imaginilor pe ecrane mai mici */
+  }
+
+  .footer-dark {
+    padding: 20px; /* Reducem spațiul în jurul textului din subsol pe ecrane mai mici */
+  }
+
+
+}
+
+/* Stiluri pentru ecrane cu lățime mai mică sau egală cu 480px */
+@media screen and (max-width: 480px) {
+  nav {
+    font-size: 0.8rem; /* Reducem și mai mult dimensiunea fontului din meniu pentru ecrane foarte mici */
+  }
+
+  .about-me {
+    font-size: 0.8rem; /* Reducem și mai mult dimensiunea textului despre mine pentru ecrane foarte mici */
+  }
+
+  img {
+    width: 150px; /* Reducem și mai mult lățimea imaginilor pe ecrane foarte mici */
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  #calculator {
+    margin: 2rem auto; /* Centrăm calculatorul pe ecran */
+    width: 80%; /* Ajustăm lățimea pentru a se potrivi ecranului mai mic */
+    max-width: 400px; /* Limităm lățimea maximă */
+    padding: 10px; /* Adăugăm puțin spațiu între margini și butoane */
+  }
+
+  #result {
+    font-size: 24px; /* Mărim fontul pentru rezultat */
+    height: 60px; /* Mărim înălțimea rezultatului */
+    margin-bottom: 10px; /* Spațiu între rezultat și butoane */
+  }
+
+  input[type="button"] {
+    width: 40px; /* Reducem lățimea butoanelor */
+    height: 40px; /* Reducem înălțimea butoanelor */
+    font-size: 18px; /* Reducem dimensiunea fontului pentru butoane */
+    margin: 5px; /* Spațiu între butoane */
+  }
+}
+
+
+  
+
 
