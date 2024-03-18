@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel with us!</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="favicon" href="./Images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,14 +15,14 @@
   </head>
   <body>
     <nav>
-      <a href="./index.html" target="_blank">Home</a>
-      <a href="./about.html" target="_blank">About us</a>
-      <a href="./services.html" target="_blank">Service</a>
-      <a href="./contact.html" target="_blank">Contact</a>
+      <a href="./index.html" title="Home">Home</a>
+      <a href="./about.html" title="About Us">About us</a>
+      <a href="./services.html" title="Services">Service</a>
+      <a href="./contact.html" title="Contact">Contact</a>
     </nav>
-    <header><h1>Smadu Robert-Gabriel</h1></header>
+    <header><h1 title="My name">Smadu Robert-Gabriel</h1></header>
     <section>
-      <p>
+      <p class="about-me">
         Hello!<br />I'm Robert and i'm 22 years old. I am in love with
         technology since my first memories and now i want to learn more about
         Websites and how it is all made so i am going to take you in our
@@ -32,13 +33,11 @@
     <div class="image">
       <img
         src="./Images/IMG_2270.jpg"
+        title="Photo with me"
         alt="Photo with me"
         width="300"
         height="250"
       />
-    </div>
-    <div class="instagram">
-      <a href="https://www.instagram.com/smadu_robert/">Check my Instagram</a>
     </div>
     <p class="first-question">1.What do you prefer to travel with the most?</p>
     <div class="checkbox">
@@ -79,11 +78,14 @@
       type="submit"
       value="submit"
       class="submit"
-      onclick="alert('Nice, we are best friends!!!')"
+      onclick="alert('Nice, have a nice trip!☺')"
     />
-    <p>
+    <p class="question">
       That was just a little question box to get to know each other better,
       enjoy!
     </p>
+    <footer class="footer-dark">
+      <p>&copy; <em>Travel with us</em> Company, Ltd. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
