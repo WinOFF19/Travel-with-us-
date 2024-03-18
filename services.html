@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Travel with us!</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,14 +15,65 @@
   </head>
   <body>
     <nav>
-      <a href="./index.html" target="_blank">Home</a>
-      <a href="./about.html" target="_blank">About us</a>
-      <a href="./services.html" target="_blank">Service</a>
-      <a href="./contact.html" target="_blank">Contact</a>
+      <a href="./index.html" title="Home">Home</a>
+      <a href="./about.html" title="About Us">About us</a>
+      <a href="./services.html" title="Services">Service</a>
+      <a href="./contact.html" title="Contact">Contact</a>
     </nav>
-    <p>
-      Hello, again! If you wanna meet us or maybe you want to travel with us,
-      let's get in contact, in the contact tab.
-    </p>
+    <div class="container">
+      <p class="service">
+        Hello, again!<br />If you wanna meet us or maybe you want to travel with
+        us, you can find us in the contact tab and if you need to calculate your
+        budget for your next trip, here you are!
+      </p>
+      <div id="calculator">
+        <input type="text" id="result" disabled /><br />
+        <input type="button" value="1" onclick="appendToResult('1')" />
+        <input type="button" value="2" onclick="appendToResult('2')" />
+        <input type="button" value="3" onclick="appendToResult('3')" />
+        <input
+          type="button"
+          value="+"
+          class="operator"
+          onclick="appendToResult('+')"
+        /><br />
+        <input type="button" value="4" onclick="appendToResult('4')" />
+        <input type="button" value="5" onclick="appendToResult('5')" />
+        <input type="button" value="6" onclick="appendToResult('6')" />
+        <input
+          type="button"
+          value="-"
+          class="operator"
+          onclick="appendToResult('-')"
+        /><br />
+        <input type="button" value="7" onclick="appendToResult('7')" />
+        <input type="button" value="8" onclick="appendToResult('8')" />
+        <input type="button" value="9" onclick="appendToResult('9')" />
+        <input
+          type="button"
+          value="*"
+          class="operator"
+          onclick="appendToResult('*')"
+        /><br />
+        <input type="button" value="C" onclick="clearResult()" />
+        <input type="button" value="0" onclick="appendToResult('0')" />
+        <input
+          type="button"
+          value="/"
+          class="operator"
+          onclick="appendToResult('/')"
+        />
+        <input
+          type="button"
+          value="="
+          class="operator"
+          onclick="calculateResult()"
+        />
+      </div>
+    </div>
   </body>
+  <footer class="footer-dark">
+    <p>&copy; <em>Travel with us</em> Company, Ltd. All Rights Reserved.</p>
+  </footer>
+  <script src="./index.js"></script>
 </html>
